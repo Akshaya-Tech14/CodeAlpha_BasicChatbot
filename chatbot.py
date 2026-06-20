@@ -1,14 +1,22 @@
-# Basic Chatbot (Python)
+def chatbot():
 
-A simple rule-based chatbot that responds to user inputs using predefined conditions.
+    print("===== BASIC CHATBOT =====")
+    print("Type 'bye' to exit")
 
-## Features
-- Handles basic user queries
-- Uses if-else conditions
-- Runs in terminal
+    while True:
 
-## How to Run
-python chatbot.py
+        user = input("You: ").lower()
 
-## Internship
-CodeAlpha Python Programming Internship Project
+        if user == "hello":
+            print("Bot: Hi!")
+        elif user == "how are you":
+            print("Bot: I am fine, thanks!")
+        elif user == "what is your name":
+            print("Bot: My name is CodeAlpha Bot.")
+        elif user == "bye":
+            print("Bot: Goodbye!")
+            break
+        else:
+            print("Bot: Sorry, I don't understand.")
+
+chatbot()
